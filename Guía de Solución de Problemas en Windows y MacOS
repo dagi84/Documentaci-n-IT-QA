@@ -1,0 +1,78 @@
+🖥️ Problemas Comunes y Soluciones
+
+1️⃣ No hay conexión a Internet
+
+🔹 Solución en Windows:
+
+Verificar que el cable de red esté conectado o que el WiFi esté activado.
+
+Ejecutar el solucionador de problemas de red:
+
+Ir a Configuración > Red e Internet > Estado.
+
+Hacer clic en Solucionador de problemas de red.
+
+Reiniciar el módem y router.
+
+Abrir Símbolo del sistema (CMD) y ejecutar:
+
+ipconfig /release
+ipconfig /renew
+
+Si el problema persiste, reinstalar los drivers de red desde el Administrador de dispositivos.
+
+🔹 Solución en MacOS:
+
+Ir a Preferencias del Sistema > Red y verificar el estado de la conexión.
+
+Desactivar y reactivar el WiFi o cambiar a una red diferente.
+
+Abrir Terminal y ejecutar:
+
+sudo killall -HUP mDNSResponder
+
+Reiniciar el equipo y probar la conexión nuevamente.
+
+2️⃣ Pantalla negra al iniciar el sistema
+
+🔹 Solución en Windows:
+
+Reiniciar el equipo y presionar F8 repetidamente hasta entrar en Modo Seguro.
+
+Desinstalar actualizaciones recientes desde Configuración > Actualización y seguridad.
+
+Restaurar el sistema a un punto anterior.
+
+🔹 Solución en MacOS:
+
+Forzar el apagado del equipo manteniendo presionado el botón de encendido.
+
+Iniciar en Modo Seguro presionando Shift al encender el equipo.
+
+Restablecer la NVRAM y PRAM presionando Option + Command + P + R al reiniciar.
+
+3️⃣ El equipo está lento
+
+🔹 Solución en Windows:
+
+Abrir el Administrador de tareas (Ctrl + Shift + Esc) y cerrar procesos innecesarios.
+
+Desinstalar programas innecesarios desde Panel de Control > Programas y características.
+
+Ejecutar el Liberador de espacio en disco.
+
+🔹 Solución en MacOS:
+
+Cerrar aplicaciones pesadas desde Monitor de Actividad.
+
+Eliminar archivos innecesarios en Descargas y Escritorio.
+
+Reiniciar el equipo y restablecer el SMC si el problema persiste.
+
+🛠️ Consejo Adicional:
+
+🔹 Mantén siempre los controladores y sistemas operativos actualizados.
+🔹 Realiza copias de seguridad periódicas para evitar pérdida de datos.
+🔹 Si el problema persiste, consulta con un especialista o soporte técnico.
+
+🚀 ¡Siguiendo estos pasos, podrás solucionar problemas comunes en Windows y MacOS de manera efectiva!
