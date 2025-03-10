@@ -1,78 +1,66 @@
-🖥️ Problemas Comunes y Soluciones
+# Guía de solución de problemas en Windows y MacOS
 
-1️⃣ No hay conexión a Internet
+## 1. Problema: No hay conexión a Internet
+### 🔹 Solución en Windows:
+1. Verificar que el cable de red o WiFi esté correctamente conectado.
+2. Abrir **Símbolo del sistema (CMD)** y ejecutar:
+   ```sh
+   ipconfig /release
+   ipconfig /renew
+   ```
+3. Reiniciar el router y probar nuevamente la conexión.
+4. Si el problema persiste, restablecer los valores de red:
+   - Ir a **Configuración > Red e Internet > Estado**.
+   - Seleccionar **Restablecimiento de red** y reiniciar el equipo.
 
-🔹 Solución en Windows:
+### 🔹 Solución en MacOS:
+1. Ir a **Preferencias del Sistema > Red** y verificar el estado de la conexión.
+2. Desactivar y volver a activar el WiFi o conectar un cable de red.
+3. Reiniciar el router y probar la conexión nuevamente.
+4. Si el problema continúa, restablecer la configuración de red:
+   - Abrir **Terminal** y ejecutar:
+   ```sh
+   sudo ifconfig en0 down
+   sudo ifconfig en0 up
+   ```
 
-Verificar que el cable de red esté conectado o que el WiFi esté activado.
+---
 
-Ejecutar el solucionador de problemas de red:
+## 2. Problema: Pantalla congelada o sistema lento
+### 🔹 Solución en Windows:
+1. Presionar **Ctrl + Shift + Esc** para abrir el Administrador de Tareas.
+2. Identificar procesos que consuman muchos recursos y finalizarlos.
+3. Liberar espacio en disco:
+   - Ir a **Configuración > Almacenamiento** y eliminar archivos temporales.
+4. Reiniciar el equipo y comprobar el rendimiento.
 
-Ir a Configuración > Red e Internet > Estado.
+### 🔹 Solución en MacOS:
+1. Presionar **Cmd + Option + Esc** para forzar el cierre de aplicaciones.
+2. Reiniciar el equipo y probar su rendimiento.
+3. Verificar el uso de almacenamiento en **Menú Apple > Acerca de este Mac > Almacenamiento**.
+4. Ejecutar "Primera Ayuda" en la utilidad de discos para reparar errores.
 
-Hacer clic en Solucionador de problemas de red.
+---
 
-Reiniciar el módem y router.
+## 3. Problema: No se puede abrir una aplicación
+### 🔹 Solución en Windows:
+1. Revisar si hay actualizaciones pendientes de la aplicación.
+2. Desinstalar y reinstalar la aplicación problemática.
+3. Ejecutar la aplicación como administrador (**clic derecho > Ejecutar como administrador**).
+4. Verificar la compatibilidad:
+   - Clic derecho en el icono de la aplicación > **Propiedades** > **Compatibilidad** > Ejecutar en modo compatibilidad.
 
-Abrir Símbolo del sistema (CMD) y ejecutar:
+### 🔹 Solución en MacOS:
+1. Revisar si la aplicación está autorizada en **Preferencias del Sistema > Seguridad y Privacidad**.
+2. Desinstalar y reinstalar la aplicación.
+3. Reiniciar el equipo y probar nuevamente.
+4. Ejecutar la aplicación desde **Terminal** con:
+   ```sh
+   open /Applications/NOMBRE_APP.app
+   ```
 
-ipconfig /release
-ipconfig /renew
+---
 
-Si el problema persiste, reinstalar los drivers de red desde el Administrador de dispositivos.
+### 📌 **Conclusión**
+Esta guía proporciona soluciones rápidas y efectivas para problemas comunes en **Windows y MacOS**. Si el problema persiste, se recomienda contactar al soporte técnico para una revisión más detallada.
 
-🔹 Solución en MacOS:
-
-Ir a Preferencias del Sistema > Red y verificar el estado de la conexión.
-
-Desactivar y reactivar el WiFi o cambiar a una red diferente.
-
-Abrir Terminal y ejecutar:
-
-sudo killall -HUP mDNSResponder
-
-Reiniciar el equipo y probar la conexión nuevamente.
-
-2️⃣ Pantalla negra al iniciar el sistema
-
-🔹 Solución en Windows:
-
-Reiniciar el equipo y presionar F8 repetidamente hasta entrar en Modo Seguro.
-
-Desinstalar actualizaciones recientes desde Configuración > Actualización y seguridad.
-
-Restaurar el sistema a un punto anterior.
-
-🔹 Solución en MacOS:
-
-Forzar el apagado del equipo manteniendo presionado el botón de encendido.
-
-Iniciar en Modo Seguro presionando Shift al encender el equipo.
-
-Restablecer la NVRAM y PRAM presionando Option + Command + P + R al reiniciar.
-
-3️⃣ El equipo está lento
-
-🔹 Solución en Windows:
-
-Abrir el Administrador de tareas (Ctrl + Shift + Esc) y cerrar procesos innecesarios.
-
-Desinstalar programas innecesarios desde Panel de Control > Programas y características.
-
-Ejecutar el Liberador de espacio en disco.
-
-🔹 Solución en MacOS:
-
-Cerrar aplicaciones pesadas desde Monitor de Actividad.
-
-Eliminar archivos innecesarios en Descargas y Escritorio.
-
-Reiniciar el equipo y restablecer el SMC si el problema persiste.
-
-🛠️ Consejo Adicional:
-
-🔹 Mantén siempre los controladores y sistemas operativos actualizados.
-🔹 Realiza copias de seguridad periódicas para evitar pérdida de datos.
-🔹 Si el problema persiste, consulta con un especialista o soporte técnico.
-
-🚀 ¡Siguiendo estos pasos, podrás solucionar problemas comunes en Windows y MacOS de manera efectiva!
